@@ -1,0 +1,7 @@
+
+
+<input type="text" placeholder="Enter Name" [(ngModel)]="name">
+<br>
+<button (click)="messageGreet()">Click</button>
+
+<h4 >hello <span *ngIf="isVisible">{{name}}</span></h4>
