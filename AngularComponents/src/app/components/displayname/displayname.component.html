@@ -1,0 +1,9 @@
+
+<input type="text" placeholder="Enter your name"
+ [(ngModel)]="name">
+
+<button (click)="submitName()">Submit</button> 
+
+
+
+<h2 *ngIf="isVisible">{{name}}</h2>
