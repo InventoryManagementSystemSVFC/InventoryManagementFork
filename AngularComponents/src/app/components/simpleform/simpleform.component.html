@@ -1,0 +1,18 @@
+
+<form action="">
+
+  <input type="text" placeholder="Enter First Name" [(ngModel)]="firstName" name="firstName">
+  <br> <br>
+  <input type="text" placeholder="Enter Last Name" [(ngModel)]="lastName" name="lastName">
+  <br><br>
+  <input type="number" placeholder="Enter Age"[(ngModel)]="age" name="age"><br><br>
+
+
+  <button (click)="showResult()">submit</button>
+
+
+  <p *ngIf="visible">{{firstName}}</p>
+  <p *ngIf="visible">{{lastName}}</p>
+  <p *ngIf="visible">{{age}}</p>
+
+</form>
