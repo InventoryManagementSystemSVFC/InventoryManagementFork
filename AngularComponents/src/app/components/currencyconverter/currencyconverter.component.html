@@ -1,0 +1,22 @@
+<div class="converter">
+  <h3>Currency Converter</h3>
+
+  <form (ngSubmit)="pesoDollar()">
+    <label for="pesoAmount">Amount in PHP:</label>
+    <input type="number" [(ngModel)]="pesoAmount" name="pesoAmount" min="1"/>
+
+    <button type="submit">Convert</button>
+  </form>
+
+  <div *ngIf="convertedAmount !== null">
+    <h3>Converted Amount: {{ convertedAmount | number:'1.2-2' }} USD</h3>
+  </div>
+
+
+
+
+
+
+  
+</div>
+
