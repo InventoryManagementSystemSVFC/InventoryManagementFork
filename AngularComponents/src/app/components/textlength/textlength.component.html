@@ -1,0 +1,8 @@
+
+<input type="text" placeholder="Enter a string" [(ngModel)]="name">
+<br><br>
+<button (click)="textLength()">length</button>
+
+
+
+<p *ngIf="isVisible">{{name.length}}</p>
