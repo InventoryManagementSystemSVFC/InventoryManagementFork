@@ -1,0 +1,13 @@
+
+
+<div>
+  <input [(ngModel)]="revWord" placeholder="Enter a string"><br>
+  <button (click)="reverseFunction()">reverse</button> <br>
+  
+  
+  <div *ngIf="isVisible">
+    <p> {{ wordReverser(revWord) }}</p>
+
+  </div>
+
+</div> 
