@@ -1,0 +1,8 @@
+
+
+<input type="text" [(ngModel)]="uname">
+
+<button (click)="showUsername()">Show Username</button>
+
+
+<p *ngIf="isVisible">{{uname}}</p>
