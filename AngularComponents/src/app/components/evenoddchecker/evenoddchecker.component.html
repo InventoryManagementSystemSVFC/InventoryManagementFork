@@ -1,0 +1,21 @@
+
+  
+  <div class="container">
+
+    <input type="number" placeholder="Input number" [(ngModel)]="number">
+  
+
+    
+    <div *ngIf="number !== 0">
+
+        <p *ngIf="number % 2 ==  0">
+            {{number}} is even number
+        </p>
+
+        <p *ngIf="number % 2 ==  1">
+          {{number}} is odd number
+       </p>
+      
+    </div>
+
+  </div>
