@@ -1,0 +1,15 @@
+
+
+
+<div>
+
+  <h2>Palindrome Checker</h2>
+  <input [(ngModel)]="inputText" placeholder="Enter text" />
+  <button (click)="checkPalindrome()">Check</button>
+
+  <div *ngIf="isPalindrome !== null">
+    <p>{{ isPalindrome ? 'The input text is a palindrome!' : 'The input text is not a palindrome.' }}</p>
+   </div>
+
+   
+</div>
