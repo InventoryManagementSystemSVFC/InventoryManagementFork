@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+
+  <input type="text" name="username" [(ngModel)]="username"  placeholder="Enter your username"><br><br>
+
+  <input type="email" name="email" [(ngModel)]="email" placeholder="Enter your email"><br>
+
+  <button type="submit">Submit</button>
+
+
+</form>
+
+
+<div>
+  <p>{{ message }}</p>
+</div>
+
