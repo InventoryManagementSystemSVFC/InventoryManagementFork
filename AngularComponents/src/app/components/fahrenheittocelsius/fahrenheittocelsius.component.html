@@ -1,0 +1,17 @@
+
+
+
+<div class="container">
+  <h2>Fahrenheit to Celsius Converter</h2>
+  
+  <div>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input id="fahrenheit" type="number" [(ngModel)]="fahrenheit" />
+  </div>
+
+  <button (click)="convertToCelsius()">Convert</button>
+
+  <div *ngIf="celsius !== null">
+    <p>The temperature in Celsius:  {{ celsius | number: '1.2-2' }} °C</p>
+  </div> 
+</div>
