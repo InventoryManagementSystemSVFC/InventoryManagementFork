@@ -1,0 +1,6 @@
+
+
+
+<input type="text" #tablenumber placeholder="input a number" />
+<button (click)="calculate(tablenumber.value)">Multiply</button>
+<h3 *ngFor="let res of result">{{res}}</h3>
