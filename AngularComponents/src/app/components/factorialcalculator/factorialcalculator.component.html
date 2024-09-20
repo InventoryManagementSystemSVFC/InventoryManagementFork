@@ -1,0 +1,12 @@
+
+
+
+<form>
+  <input type="number" #factorialInput placeholder="Enter a number" />
+  <button type="button" (click)="solveFactorial(factorialInput.value)">
+    Calculate Factorial
+  </button>
+</form>
+
+<p *ngIf="result !== 0">Factorial: {{ result }}</p>
+
