@@ -17,7 +17,8 @@ export class ShowdateComponent {
 
   showDate() { 
 
-      if(this.isCliked == false ) { 
+      if(this.isCliked == false )
+      { 
         this.isCliked = true;
       }
       else { 

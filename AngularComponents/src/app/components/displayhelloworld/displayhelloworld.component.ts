@@ -9,5 +9,4 @@ export class DisplayhelloworldComponent {
 
     message: string = "hello world";
 
-
 }
