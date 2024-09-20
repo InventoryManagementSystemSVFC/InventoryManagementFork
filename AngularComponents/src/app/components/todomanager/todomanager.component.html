@@ -1,0 +1,20 @@
+
+
+
+<form #mytodoform="ngForm">
+
+  <input type="text" ngModel name="todo" placeholder="Insert To do :" [(ngModel)]="inputTodo">
+
+  <button (click)="addTodolist(mytodoform.value)">Add</button>
+
+</form>
+
+<div>
+  <ol >
+    <li *ngFor="let list of todoList; let id=index">
+      {{list.todo}}
+      <button (click)="removeTodolist(id)">remove</button>
+
+    </li> 
+  </ol>
+</div>
